@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+      }
+  div{
+    display: flex;
+    width: 210px;
+    height: 40px;
+    background-color: black;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top-right-radius:40% ;
+    justify-content: center;
+    align-items: center;
+  }
+  input:focus{
+
+    outline: 0;
+  }
+  form:focus{
+    background-color: blue;
+  }
+  input:focus ~ .bb{
+    background-color: white;
+    display: block;
+  }
+  .aa,.bb{
+    width: 15px;
+  }
+  .aa,.bb{
+    background-image: url(https://www.svgrepo.com/show/532555/search.svg);
+    background-size: contain;
+  }
+  .bb{
+    background-color:white;
+    display: none;
+  }
+</style>
+    <div><button class="bb"><img src="" alt=""></button>
+    <form action="">
+        <input type="search" name="" id=""><button class="aa"><img src="" alt=""></button>
+    </form>
+    </div>
+</body>
+</html>
